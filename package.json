@@ -1,0 +1,22 @@
+{
+  "name": "database_app",
+  "version": "1.0.0",
+  "description": "seaching for character from rickandmartyapi.com source",
+  "main": "index.js",
+  "scripts": {
+    "test": "test, start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KarneyenkaDzmitry/database_app.git"
+  },
+  "author": "Dzmitry_Karneyenka",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KarneyenkaDzmitry/database_app/issues"
+  },
+  "homepage": "https://github.com/KarneyenkaDzmitry/database_app#readme",
+  "dependencies": {
+    "request": "^2.87.0"
+  }
+}
