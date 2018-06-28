@@ -15,9 +15,8 @@ const args = require('yargs')
     .epilogue('Created by Dzmitry Karneyenka')
     .argv
 
-let keys = ['id', 'name', 'species', 'status', 'type', 'gender', 'origin', 'location'];
 let result = '{'
-result += typeof(args.id)==='undefined'?'':'\"id\":'+args.id+',';
+result += typeof(args.id)==='undefined'?'':'\"id\":\"'+args.id+'\",';
 result+= typeof(args.name)==='undefined'?'':'\"name\":\"'+args.name+'\",';
 result+= typeof(args.species)==='undefined'?'':'\"species\":\"'+args.species+'\",';
 result+= typeof(args.status)==='undefined'?'':'\"status\":\"'+args.status+'\",';
@@ -25,8 +24,7 @@ result+= typeof(args.type)==='undefined'?'':'\"type\":\"'+args.type+'\",';
 result+= typeof(args.gender)==='undefined'?'':'\"gender\":\"'+args.gender+'\",';
 result+= typeof(args.origin)==='undefined'?'':'\"origin\":\"'+args.origin+'\",';
 result+= typeof(args.location)==='undefined'?'':'\"location\":\"'+args.location+'\",';
-//console.log(result);
 result = result.slice(0, -1)+'}';
 const parameters = JSON.parse(result);
 finder.main(parameters);
-//console.log(parameters);
+console.log(parameters);
