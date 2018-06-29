@@ -43,7 +43,7 @@ function getCharacter(parameters) {
     let dataBase = JSON.parse(fs.readFileSync(fileDB, 'utf8')).results;
     Object.keys(parameters).forEach(elem => {
         dataBase = dataBase.filter(
-            element => element[elem].toString().toLowerCase() === parameters[elem].toString().toLowerCase())
+            element => element[elem].toString().toLowerCase().indexOf(parameters[elem].toString().toLowerCase())>-1)
     });
     return dataBase;
 }

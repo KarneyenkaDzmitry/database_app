@@ -14,17 +14,54 @@ const args = require('yargs')
     .help('h').alias('h', 'help')
     .epilogue('Created by Dzmitry Karneyenka')
     .argv
+/*There are three types of function that do the same thing. They are for example. I like more the second one.*/
+function first() {
+    let result = '{'
+    result += typeof (args.id) === 'undefined' ? '' : '\"id\":\"' + args.id + '\",';
+    result += typeof (args.name) === 'undefined' ? '' : '\"name\":\"' + args.name + '\",';
+    result += typeof (args.species) === 'undefined' ? '' : '\"species\":\"' + args.species + '\",';
+    result += typeof (args.status) === 'undefined' ? '' : '\"status\":\"' + args.status + '\",';
+    result += typeof (args.type) === 'undefined' ? '' : '\"type\":\"' + args.type + '\",';
+    result += typeof (args.gender) === 'undefined' ? '' : '\"gender\":\"' + args.gender + '\",';
+    result += typeof (args.origin) === 'undefined' ? '' : '\"origin\":\"' + args.origin + '\",';
+    result += typeof (args.location) === 'undefined' ? '' : '\"location\":\"' + args.location + '\",';
+    result = result.slice(0, -1) + '}';
+    return JSON.parse(result);
+}
 
-let result = '{'
-result += typeof(args.id)==='undefined'?'':'\"id\":\"'+args.id+'\",';
-result+= typeof(args.name)==='undefined'?'':'\"name\":\"'+args.name+'\",';
-result+= typeof(args.species)==='undefined'?'':'\"species\":\"'+args.species+'\",';
-result+= typeof(args.status)==='undefined'?'':'\"status\":\"'+args.status+'\",';
-result+= typeof(args.type)==='undefined'?'':'\"type\":\"'+args.type+'\",';
-result+= typeof(args.gender)==='undefined'?'':'\"gender\":\"'+args.gender+'\",';
-result+= typeof(args.origin)==='undefined'?'':'\"origin\":\"'+args.origin+'\",';
-result+= typeof(args.location)==='undefined'?'':'\"location\":\"'+args.location+'\",';
-result = result.slice(0, -1)+'}';
-const parameters = JSON.parse(result);
-finder.main(parameters);
-console.log(parameters);
+function second() {
+    const keys = ['id', 'name', 'species', 'status', 'type', 'gender', 'origin', 'location'];
+    let result = '{';
+    keys.forEach((el) => {
+        result += typeof (args[el]) === 'undefined' ? '' : '\"' + el + '\":\"' + args[el] + '\",';
+    });
+    return JSON.parse(result.slice(0, -1) + '}');
+}
+
+function third(args) {
+    delete args['_']; 
+    delete args['version']; 
+    delete args['h']; 
+    delete args['help']; 
+    delete args['$0'];
+    delete args['i'];
+    delete args['n'];
+    delete args['sp'];
+    delete args['st'];
+    delete args['t'];
+    delete args['g'];
+    delete args['o'];
+    delete args['l'];
+    Object.keys(args).forEach((key, ind) => {
+        if (typeof (args[key]) === 'undefined') { delete args[key] };
+    });
+    return args;
+}
+
+//finder.main(first(args));
+//finder.main(second(args));
+finder.main(third(args));
+
+
+
+
