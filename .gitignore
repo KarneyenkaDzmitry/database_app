@@ -6,8 +6,8 @@ yarn-debug.log*
 yarn-error.log*
 
 # json files and xlsx files
-!resources/*.js
-!resources/
+resources/*.xlsx
+resources/*.json
 *.xlsx
 
 # Runtime data
