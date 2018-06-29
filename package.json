@@ -4,6 +4,7 @@
   "description": "seaching for character from rickandmartyapi.com source",
   "main": "index.js",
   "scripts": {
+    "postinstall": "mrdir resources",
     "test": "test, start"
   },
   "repository": {
