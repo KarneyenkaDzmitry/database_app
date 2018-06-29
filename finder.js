@@ -11,10 +11,10 @@ async function main(parameters) {
         setTimeout(() => {
             const character = getCharacter(parameters);
             console.log(character);
-            fs.writeFileSync('./resources/result.json', JSON.stringify(character), 'utf8' );
-        }, 5000);
+            fs.writeFileSync('./resources/result.json', JSON.stringify(character), 'utf8');
+        }, 10000);
     })
-    .catch((err) => { console.log(err); })
+        .catch((err) => { console.log(err); })
 };
 
 function getBase(url) {
@@ -26,7 +26,7 @@ function getBase(url) {
                     array = [...array, ...data.results];
                     fs.writeFileSync(fileDB, '{\"results\": ' + JSON.stringify(array) + '}', 'utf-8');
                     url = data.info.next;
-                    url!==''?console.log('Data recieved!'):getBase(url); 
+                    url === '' ? console.log('Data recieved!') : getBase(url);
                 }
                 else {
                     console.log('Something went wrong! Response code:' + response.statusCode);
@@ -42,8 +42,13 @@ function getBase(url) {
 function getCharacter(parameters) {
     let dataBase = JSON.parse(fs.readFileSync(fileDB, 'utf8')).results;
     Object.keys(parameters).forEach(elem => {
-        dataBase = dataBase.filter(
-            element => element[elem].toString().toLowerCase().indexOf(parameters[elem].toString().toLowerCase())>-1)
+        if (elem === 'id') {
+            dataBase = dataBase.filter(
+                element => element[elem].toString().toLowerCase() === parameters[elem].toString().toLowerCase());
+        } else {
+            dataBase = dataBase.filter(
+                element => element[elem].toString().toLowerCase().indexOf(parameters[elem].toString().toLowerCase()) > -1);
+        }
     });
     return dataBase;
 }

@@ -1,1 +1,185 @@
-[{"id":1,"name":"Rick Sanchez","status":"Alive","species":"Human","type":"","gender":"Male","origin":{"name":"Earth (C-137)","url":"https://rickandmortyapi.com/api/location/1"},"location":{"name":"Earth (Replacement Dimension)","url":"https://rickandmortyapi.com/api/location/20"},"image":"https://rickandmortyapi.com/api/character/avatar/1.jpeg","episode":["https://rickandmortyapi.com/api/episode/1","https://rickandmortyapi.com/api/episode/2","https://rickandmortyapi.com/api/episode/3","https://rickandmortyapi.com/api/episode/4","https://rickandmortyapi.com/api/episode/5","https://rickandmortyapi.com/api/episode/6","https://rickandmortyapi.com/api/episode/7","https://rickandmortyapi.com/api/episode/8","https://rickandmortyapi.com/api/episode/9","https://rickandmortyapi.com/api/episode/10","https://rickandmortyapi.com/api/episode/11","https://rickandmortyapi.com/api/episode/12","https://rickandmortyapi.com/api/episode/13","https://rickandmortyapi.com/api/episode/14","https://rickandmortyapi.com/api/episode/15","https://rickandmortyapi.com/api/episode/16","https://rickandmortyapi.com/api/episode/17","https://rickandmortyapi.com/api/episode/18","https://rickandmortyapi.com/api/episode/19","https://rickandmortyapi.com/api/episode/20","https://rickandmortyapi.com/api/episode/21","https://rickandmortyapi.com/api/episode/22","https://rickandmortyapi.com/api/episode/23","https://rickandmortyapi.com/api/episode/24","https://rickandmortyapi.com/api/episode/25","https://rickandmortyapi.com/api/episode/26","https://rickandmortyapi.com/api/episode/27","https://rickandmortyapi.com/api/episode/28","https://rickandmortyapi.com/api/episode/29","https://rickandmortyapi.com/api/episode/30","https://rickandmortyapi.com/api/episode/31"],"url":"https://rickandmortyapi.com/api/character/1","created":"2017-11-04T18:48:46.250Z"},{"id":8,"name":"Adjudicator Rick","status":"Dead","species":"Human","type":"","gender":"Male","origin":{"name":"unknown","url":""},"location":{"name":"Citadel of Ricks","url":"https://rickandmortyapi.com/api/location/3"},"image":"https://rickandmortyapi.com/api/character/avatar/8.jpeg","episode":["https://rickandmortyapi.com/api/episode/28"],"url":"https://rickandmortyapi.com/api/character/8","created":"2017-11-04T20:03:34.737Z"},{"id":15,"name":"Alien Rick","status":"unknown","species":"Alien","type":"","gender":"Male","origin":{"name":"unknown","url":""},"location":{"name":"Citadel of Ricks","url":"https://rickandmortyapi.com/api/location/3"},"image":"https://rickandmortyapi.com/api/character/avatar/15.jpeg","episode":["https://rickandmortyapi.com/api/episode/10"],"url":"https://rickandmortyapi.com/api/character/15","created":"2017-11-04T20:56:13.215Z"},{"id":19,"name":"Antenna Rick","status":"unknown","species":"Human","type":"Human with antennae","gender":"Male","origin":{"name":"unknown","url":""},"location":{"name":"unknown","url":""},"image":"https://rickandmortyapi.com/api/character/avatar/19.jpeg","episode":["https://rickandmortyapi.com/api/episode/10"],"url":"https://rickandmortyapi.com/api/character/19","created":"2017-11-04T22:28:13.756Z"}]
+[
+    {
+        "id": 4,
+        "name": "Beth Smith",
+        "status": "Alive",
+        "species": "Human",
+        "type": "",
+        "gender": "Female",
+        "origin": {
+            "name": "Earth (Replacement Dimension)",
+            "url": "https://rickandmortyapi.com/api/location/20"
+        },
+        "location": {
+            "name": "Earth (Replacement Dimension)",
+            "url": "https://rickandmortyapi.com/api/location/20"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/4.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/6",
+            "https://rickandmortyapi.com/api/episode/7",
+            "https://rickandmortyapi.com/api/episode/8",
+            "https://rickandmortyapi.com/api/episode/9",
+            "https://rickandmortyapi.com/api/episode/10",
+            "https://rickandmortyapi.com/api/episode/11",
+            "https://rickandmortyapi.com/api/episode/12",
+            "https://rickandmortyapi.com/api/episode/14",
+            "https://rickandmortyapi.com/api/episode/15",
+            "https://rickandmortyapi.com/api/episode/16",
+            "https://rickandmortyapi.com/api/episode/18",
+            "https://rickandmortyapi.com/api/episode/19",
+            "https://rickandmortyapi.com/api/episode/20",
+            "https://rickandmortyapi.com/api/episode/21",
+            "https://rickandmortyapi.com/api/episode/22",
+            "https://rickandmortyapi.com/api/episode/23",
+            "https://rickandmortyapi.com/api/episode/24",
+            "https://rickandmortyapi.com/api/episode/25",
+            "https://rickandmortyapi.com/api/episode/26",
+            "https://rickandmortyapi.com/api/episode/27",
+            "https://rickandmortyapi.com/api/episode/28",
+            "https://rickandmortyapi.com/api/episode/29",
+            "https://rickandmortyapi.com/api/episode/30",
+            "https://rickandmortyapi.com/api/episode/31"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/4",
+        "created": "2017-11-04T19:22:43.665Z"
+    },
+    {
+        "id": 37,
+        "name": "Beth Sanchez",
+        "status": "Alive",
+        "species": "Human",
+        "type": "",
+        "gender": "Female",
+        "origin": {
+            "name": "Earth (C-500A)",
+            "url": "https://rickandmortyapi.com/api/location/23"
+        },
+        "location": {
+            "name": "Earth (C-500A)",
+            "url": "https://rickandmortyapi.com/api/location/23"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/37.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/8"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/37",
+        "created": "2017-11-05T09:38:22.960Z"
+    },
+    {
+        "id": 38,
+        "name": "Beth Smith",
+        "status": "Alive",
+        "species": "Human",
+        "type": "",
+        "gender": "Female",
+        "origin": {
+            "name": "Earth (C-137)",
+            "url": "https://rickandmortyapi.com/api/location/1"
+        },
+        "location": {
+            "name": "Earth (C-137)",
+            "url": "https://rickandmortyapi.com/api/location/1"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/38.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/1",
+            "https://rickandmortyapi.com/api/episode/2",
+            "https://rickandmortyapi.com/api/episode/3",
+            "https://rickandmortyapi.com/api/episode/4",
+            "https://rickandmortyapi.com/api/episode/5",
+            "https://rickandmortyapi.com/api/episode/6",
+            "https://rickandmortyapi.com/api/episode/22"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/38",
+        "created": "2017-11-05T09:48:44.230Z"
+    },
+    {
+        "id": 39,
+        "name": "Beth Smith",
+        "status": "Alive",
+        "species": "Human",
+        "type": "",
+        "gender": "Female",
+        "origin": {
+            "name": "Earth (Evil Rick's Target Dimension)",
+            "url": "https://rickandmortyapi.com/api/location/34"
+        },
+        "location": {
+            "name": "Earth (Evil Rick's Target Dimension)",
+            "url": "https://rickandmortyapi.com/api/location/34"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/39.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/10"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/39",
+        "created": "2017-11-05T09:52:31.777Z"
+    },
+    {
+        "id": 40,
+        "name": "Beth's Mytholog",
+        "status": "Dead",
+        "species": "Mytholog",
+        "type": "",
+        "gender": "Female",
+        "origin": {
+            "name": "Nuptia 4",
+            "url": "https://rickandmortyapi.com/api/location/13"
+        },
+        "location": {
+            "name": "Nuptia 4",
+            "url": "https://rickandmortyapi.com/api/location/13"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/40.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/18"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/40",
+        "created": "2017-11-05T10:02:26.701Z"
+    },
+    {
+        "id": 116,
+        "name": "Evil Beth Clone",
+        "status": "Dead",
+        "species": "Human",
+        "type": "Clone",
+        "gender": "Female",
+        "origin": {
+            "name": "unknown",
+            "url": ""
+        },
+        "location": {
+            "name": "Earth (C-137)",
+            "url": "https://rickandmortyapi.com/api/location/1"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/116.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/5"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/116",
+        "created": "2017-12-26T16:10:47.781Z"
+    },
+    {
+        "id": 148,
+        "name": "Goddess Beth",
+        "status": "unknown",
+        "species": "Mytholog",
+        "type": "",
+        "gender": "Female",
+        "origin": {
+            "name": "Nuptia 4",
+            "url": "https://rickandmortyapi.com/api/location/13"
+        },
+        "location": {
+            "name": "Nuptia 4",
+            "url": "https://rickandmortyapi.com/api/location/13"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/148.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/18"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/148",
+        "created": "2017-12-29T11:40:25.135Z"
+    }
+]
